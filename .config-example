@@ -1,0 +1,3 @@
+### Config ###
+BACKUPDIR="/media/backup"
+TEST="test"
