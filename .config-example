@@ -1,3 +1,14 @@
 ### Config ###
-BACKUPDIR="/media/backup"
-TEST="test"
+BACKUPDIRS=( "/home/user" "/etc" "/var" )
+EXCLUDEDIRS=( "/home/user/music" "/home/user/movies" )
+BACKUPDEST="/media/backup"
+SECUREDEST="/media/external"
+# Do backup every X days
+BACKUPDAYS=2
+# Move Backup from BACKUPDEST to SECUREDEST after X months
+SECUREMONTHS=2
+# Debug messages
+# 0 - No message
+# 1 - Write to logfile
+# 2 - Display messages with zenity and write logfile
+MESSAGES=0
